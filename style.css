@@ -1,11 +1,14 @@
 html {
-	font-family: "Lora", serif;
+	font-family: "PT Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 
 	font-size: 24px;
 	line-height: 38px;
+
+	color: #454545;
+	background-color: #F3F3F3;
 }
 
 .font-light {
@@ -16,8 +19,13 @@ html {
 	font-weight: 400;
 }
 
+
 .font-semibold {
 	font-weight: 600;
+}
+
+.font-bold {
+	font-weight: 700;
 }
 
 .font-extrabold {
@@ -30,7 +38,18 @@ html {
 	font-weight: 800;
 	line-height: 136px;
 	text-transform: capitalize;
+	color: #333333;
 
+
+}
+
+.heading-1-light {
+	font-family: "Raleway", sans-serif;
+	font-size: 116px;
+	font-weight: 300;
+	line-height: 136px;
+	text-transform: capitalize;
+	color: #333333;
 }
 
 .heading-2 {
@@ -39,6 +58,16 @@ html {
 	font-weight: 800;
 	line-height: 80px;
 	text-transform: capitalize;
+	color: #333333;
+}
+
+.heading-2-light{
+	font-family: "Raleway", sans-serif;
+	font-size: 68px;
+	font-weight: 300;
+	line-height: 80px;
+	text-transform: capitalize;
+	color: #333333;
 }
 
 .heading-3 {
@@ -49,46 +78,97 @@ html {
 	text-transform: uppercase;
 }
 
+.heading-3-light {
+	font-family: "Raleway", sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
 .quotes {
 	font-family: "Raleway", sans-serif;
 	font-size: 38px;
-	font-weight: 800;
-	line-height: 53px;
+	font-weight: 600;
+	line-height: 52px;
+	font-style: italic;
+}
+
+.quotes-light {
+	font-family: "Raleway", sans-serif;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	font-style: italic;
+}
+
+.quotes p:nth-child(2){
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 34px;
+	font-style: italic;
+}
+
+.quotes-in-text {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 38px;
 	font-style: italic;
 }
 
 
-/* blockquote {
-	background-color: red;
-
+.text-xs {
+	font-size: 20px;
+	line-height: 32px;
 }
 
-blockquote p:first-child {
-	background-color: blue;
-}
-blockquote p:nth-child(2) {
-	background-color: green;
-} */
-
-
-
-.raleway {
+.author {
 	font-family: "Raleway", sans-serif;
-	font-optical-sizing: auto;
+	font-size: 24px;
 	font-weight: 400;
-	font-style: normal;
+	line-height: 34px;
+	font-style: italic;
 }
 
-.raleway-bold {
-	font-family: "Raleway", sans-serif;
-	font-optical-sizing: auto;
+#quote-mark{
+	font-size: 140px;
 	font-weight: 700;
-	font-style: normal;
+	line-height: 0px;
+
 }
 
-.lora-regular {
-	font-family: "Lora", serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
+#reference-link{
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 38px;
+	font-style: italic;
 }
+
+q {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 38px;
+	font-style: italic;
+}
+
+time {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+strong{
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+}
+
+a{
+	color: #1A3ADA;
+}
+
