@@ -11,26 +11,7 @@ html {
 	background-color: #F3F3F3;
 }
 
-.font-light {
-	font-weight: 300;
-}
 
-.font-regular {
-	font-weight: 400;
-}
-
-
-.font-semibold {
-	font-weight: 600;
-}
-
-.font-bold {
-	font-weight: 700;
-}
-
-.font-extrabold {
-	font-weight: 800;
-}
 
 .heading-1 {
 	font-family: "Raleway", sans-serif;
@@ -39,7 +20,6 @@ html {
 	line-height: 136px;
 	text-transform: capitalize;
 	color: #333333;
-
 
 }
 
@@ -61,7 +41,7 @@ html {
 	color: #333333;
 }
 
-.heading-2-light{
+.heading-2-light {
 	font-family: "Raleway", sans-serif;
 	font-size: 68px;
 	font-weight: 300;
@@ -86,15 +66,18 @@ html {
 	text-transform: uppercase;
 }
 
-.quotes {
+.quote {
 	font-family: "Raleway", sans-serif;
 	font-size: 38px;
 	font-weight: 600;
 	line-height: 52px;
 	font-style: italic;
+
+	border-top: 4px solid #333333;
+
 }
 
-.quotes-light {
+.quote-light {
 	font-family: "Raleway", sans-serif;
 	font-size: 38px;
 	font-weight: 400;
@@ -102,7 +85,7 @@ html {
 	font-style: italic;
 }
 
-.quotes p:nth-child(2){
+.quote p:nth-child(2) {
 	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	font-weight: 400;
@@ -110,7 +93,7 @@ html {
 	font-style: italic;
 }
 
-.quotes-in-text {
+.quote-inline {
 	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	font-weight: 600;
@@ -119,32 +102,56 @@ html {
 }
 
 
-.text-xs {
+.p-xs {
 	font-size: 20px;
 	line-height: 32px;
 }
+
+.time-32 {
+	font-family: "Raleway", sans-serif;
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 400;
+	font-style: italic;
+}
+
 
 .author {
 	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	font-weight: 400;
-	line-height: 34px;
+	line-height: 32px;
 	font-style: italic;
 }
 
-#quote-mark{
-	font-size: 140px;
-	font-weight: 700;
-	line-height: 0px;
-
+.line {
+	height: 9px;
+	width: 88px;
+	background-color: #333333;
 }
 
-#reference-link{
+#main-quote {
+	font-family: "Raleway", sans-serif;
+	font-size: 44px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 64px;
+}
+
+
+#reference-link {
 	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 38px;
 	font-style: italic;
+	text-decoration-line: underline;
+
+
+	border: 2px solid #333333;
+	border-left: none;
+	
+	padding: 43px 56px;
 }
 
 q {
@@ -163,12 +170,11 @@ time {
 	font-style: italic;
 }
 
-strong{
+strong {
 	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
 }
 
-a{
+a {
 	color: #1A3ADA;
 }
-
