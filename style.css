@@ -9,45 +9,105 @@ html {
 
 	color: #454545;
 	background-color: #F3F3F3;
+
+
 }
+
+body {
+	width: 1170px;
+	margin-inline: auto;
+	margin-top: 84px;
+}
+
+
 
 
 
 .heading-1 {
 	font-family: "Raleway", sans-serif;
-	font-size: 116px;
-	font-weight: 800;
-	line-height: 136px;
 	text-transform: capitalize;
 	color: #333333;
+
+	margin-top: 66px;
+
+	& span:nth-child(1) {
+		font-size: 116px;
+		font-weight: 800;
+		line-height: 136px;
+	}
+
+	& span:nth-child(2) {
+		font-size: 116px;
+		font-weight: 300;
+		line-height: 136px;
+		text-transform: uppercase;
+	}
+
+	& span:nth-child(3) {
+		font-size: 164px;
+		font-weight: 800;
+		line-height: 136px;
+	}
 
 }
 
-.heading-1-light {
-	font-family: "Raleway", sans-serif;
-	font-size: 116px;
-	font-weight: 300;
-	line-height: 136px;
-	text-transform: capitalize;
-	color: #333333;
+
+.line-response {
+	width: 1066px;
+	height: 10px;
+	background-color: #333333;
+	margin-bottom: 80px;
 }
 
 .heading-2 {
 	font-family: "Raleway", sans-serif;
 	font-size: 56px;
-	font-weight: 800;
-	line-height: 80px;
+		font-weight: 800;
+		line-height: 56px;
 	text-transform: capitalize;
-	color: #333333;
-}
 
-.heading-2-light {
-	font-family: "Raleway", sans-serif;
-	font-size: 68px;
-	font-weight: 300;
-	line-height: 80px;
-	text-transform: capitalize;
-	color: #333333;
+	width: 560px;
+	margin-bottom: 120px;
+	margin-top: 200px;
+
+	&::before {
+		height: 4px;
+		width: 1000px;
+		background-color: #333333;
+
+		content: "";
+		display: block;
+		margin-bottom: 80px;
+	}
+
+	& span{
+		font-size: 68px;
+		font-weight: 300;
+		line-height: 56px;
+		text-transform: uppercase;
+	}
+
+	/* & span:nth-child(1) {
+		font-size: 100px;
+		font-weight: 800;
+		line-height: 80px;
+	}
+
+	& span:nth-child(2) {
+		font-size: 100px;
+		font-weight: 300;
+		line-height: 80px;
+		text-transform: uppercase;
+	}
+
+	& span:nth-child(3) {
+		font-size: 60px;
+		font-weight: 800;
+		line-height: 80px;
+		text-transform: uppercase;
+	} */
+
+
 }
 
 .heading-3 {
@@ -66,34 +126,50 @@ html {
 	text-transform: uppercase;
 }
 
-.quote {
+blockquote:not(#main-quote) {
 	font-family: "Raleway", sans-serif;
-	font-size: 38px;
+	font-size: 32px;
 	font-weight: 600;
-	line-height: 52px;
+	line-height: 42px;
 	font-style: italic;
 
-	border-top: 4px solid #333333;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	margin-left: auto;
+
+	width: 700px;
+
+
+
+	& p:nth-child(2) {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 34px;
+		font-style: italic;
+		margin-top: 20px;
+	}
+
+	&::before {
+		height: 4px;
+		width: 700px;
+		background-color: #333333;
+
+		content: "";
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	& span {
+		font-weight: 400;
+
+	}
 
 }
 
-.quote-light {
-	font-family: "Raleway", sans-serif;
-	font-size: 38px;
-	font-weight: 400;
-	line-height: 52px;
-	font-style: italic;
-}
 
-.quote p:nth-child(2) {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 34px;
-	font-style: italic;
-}
 
-.quote-inline {
+
+.in-text-quote {
 	font-family: "Raleway", sans-serif;
 	font-size: 24px;
 	font-weight: 600;
@@ -107,6 +183,7 @@ html {
 	line-height: 32px;
 }
 
+
 .time-32 {
 	font-family: "Raleway", sans-serif;
 	font-size: 32px;
@@ -116,19 +193,39 @@ html {
 }
 
 
-.author {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 32px;
-	font-style: italic;
+.author-list {
+
+	display: flex;
+	gap: 22px;
+
+	margin-top: 16px;
+
 }
 
-.line {
-	height: 9px;
-	width: 88px;
-	background-color: #333333;
+
+
+.paragraph-container {
+	width: 700px;
+	text-align: left;
+
+	text-wrap: pretty;
+
+	& p {
+		margin-bottom: 60px;
+	}
+
+	& ul {
+		margin-bottom: 48px;
+		list-style: disc;
+		padding-left: 40px;
+
+		& li {
+			padding-bottom: 12px;
+		}
+	}
 }
+
+
 
 #main-quote {
 	font-family: "Raleway", sans-serif;
@@ -136,7 +233,24 @@ html {
 	font-style: italic;
 	font-weight: 600;
 	line-height: 64px;
+	margin: 126px 0px;
+	width: 927px;
+
+	& span {
+		font-weight: 300;
+	}
+
+	&::before {
+		height: 9px;
+		width: 88px;
+		background-color: #333333;
+
+		content: "";
+		display: block;
+		margin-bottom: 32px;
+	}
 }
+
 
 
 #reference-link {
@@ -149,8 +263,10 @@ html {
 
 
 	border: 2px solid #333333;
-	border-left: none;
-	
+	background-color: white;
+
+	margin-top: 250px;
+	margin-bottom: 30px;
 	padding: 43px 56px;
 }
 
@@ -173,8 +289,16 @@ time {
 strong {
 	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
+
 a {
-	color: #1A3ADA;
+	color: #A1A1A1;
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	font-style: italic;
+
 }
