@@ -10,17 +10,36 @@ html {
 	color: #454545;
 	background-color: #F3F3F3;
 
-
 }
 
 body {
 	width: 1170px;
 	margin-inline: auto;
-	margin-top: 84px;
+	margin-top: 80px;
+	margin-bottom: 120px;
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
+#top-nav-container {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&>:first-child {
+
+		font-family: "Raleway", sans-serif;
+		font-size: 32px;
+		font-weight: 300;
+		line-height: 40px;
+		font-style: italic;
+
+	}
 
 
+}
 
 
 .heading-1 {
@@ -28,7 +47,7 @@ body {
 	text-transform: capitalize;
 	color: #333333;
 
-	margin-top: 66px;
+	margin-top: 68px;
 
 	& span:nth-child(1) {
 		font-size: 116px;
@@ -52,145 +71,78 @@ body {
 }
 
 
-.line-response {
-	width: 1066px;
-	height: 10px;
-	background-color: #333333;
-	margin-bottom: 80px;
-}
-
-.heading-2 {
+#main-quote {
 	font-family: "Raleway", sans-serif;
-	font-size: 56px;
-		font-weight: 800;
-		line-height: 56px;
-	text-transform: capitalize;
-
-	width: 560px;
-	margin-bottom: 120px;
-	margin-top: 200px;
-
-	&::before {
-		height: 4px;
-		width: 1000px;
-		background-color: #333333;
-
-		content: "";
-		display: block;
-		margin-bottom: 80px;
-	}
-
-	& span{
-		font-size: 68px;
-		font-weight: 300;
-		line-height: 56px;
-		text-transform: uppercase;
-	}
-
-	/* & span:nth-child(1) {
-		font-size: 100px;
-		font-weight: 800;
-		line-height: 80px;
-	}
-
-	& span:nth-child(2) {
-		font-size: 100px;
-		font-weight: 300;
-		line-height: 80px;
-		text-transform: uppercase;
-	}
-
-	& span:nth-child(3) {
-		font-size: 60px;
-		font-weight: 800;
-		line-height: 80px;
-		text-transform: uppercase;
-	} */
-
-
-}
-
-.heading-3 {
-	font-family: "Raleway", sans-serif;
-	font-size: 36px;
-	font-weight: 600;
-	line-height: 50px;
-	text-transform: uppercase;
-}
-
-.heading-3-light {
-	font-family: "Raleway", sans-serif;
-	font-size: 35px;
-	font-weight: 300;
-	line-height: 50px;
-	text-transform: uppercase;
-}
-
-blockquote:not(#main-quote) {
-	font-family: "Raleway", sans-serif;
-	font-size: 32px;
-	font-weight: 600;
-	line-height: 42px;
+	font-size: 44px;
 	font-style: italic;
-
-	margin-top: 120px;
-	margin-bottom: 120px;
+	font-weight: 600;
+	line-height: 64px;
+	margin: 180px 0px;
+	width: 842px;
 	margin-left: auto;
 
-	width: 700px;
 
-
-
-	& p:nth-child(2) {
-		font-size: 24px;
-		font-weight: 400;
-		line-height: 34px;
-		font-style: italic;
-		margin-top: 20px;
+	& span {
+		font-weight: 300;
 	}
 
 	&::before {
-		height: 4px;
-		width: 700px;
+		height: 9px;
+		width: 88px;
 		background-color: #333333;
 
 		content: "";
 		display: block;
-		margin-bottom: 30px;
-	}
-
-	& span {
-		font-weight: 400;
-
+		margin-bottom: 32px;
 	}
 
 }
 
+.article-summary {
+
+	border-top: 1px #A1A1A1 solid;
+	border-bottom: 1px #A1A1A1 solid;
+
+	padding-top: 58px;
+	padding-bottom: 58px;
+	margin: 190px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 64px;
+
+	&>:first-child {
+
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
 
 
+		&>section {
 
-.in-text-quote {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 38px;
-	font-style: italic;
+
+			&>p:first-child {
+
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 38px;
+				text-transform: uppercase;
+
+				margin-bottom: 6px;
+
+			}
+		}
+	}
+
+	&>:nth-child(2) {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
-
-.p-xs {
-	font-size: 20px;
-	line-height: 32px;
-}
-
-
-.time-32 {
-	font-family: "Raleway", sans-serif;
-	font-size: 32px;
-	line-height: 40px;
-	font-weight: 400;
-	font-style: italic;
-}
 
 
 .author-list {
@@ -198,14 +150,55 @@ blockquote:not(#main-quote) {
 	display: flex;
 	gap: 22px;
 
-	margin-top: 16px;
-
 }
 
 
+.button {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 600;
+	background-color: #ffff;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #A1A1A1;
+
+	border: solid 1px;
+	margin-right: auto;
+	padding: 12px 24px;
+
+
+	&:hover {
+		color: #333333;
+	}
+
+}
+
+a:not(.button) {
+	color: #A1A1A1;
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	font-style: italic;
+
+
+	&:hover {
+		color: #333333;
+		text-decoration: underline;
+
+	}
+
+}
+
+.font-32 {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+}
 
 .paragraph-container {
-	width: 700px;
+	width: 876px;
 	text-align: left;
 
 	text-wrap: pretty;
@@ -223,82 +216,188 @@ blockquote:not(#main-quote) {
 			padding-bottom: 12px;
 		}
 	}
+
+	& time {
+		font-family: "Raleway", sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	& span {
+
+		font-family: "Raleway", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 38px;
+		font-style: italic;
+	}
 }
 
 
 
-#main-quote {
+
+.heading-2 {
 	font-family: "Raleway", sans-serif;
-	font-size: 44px;
-	font-style: italic;
+	font-size: 80px;
+	font-weight: 800;
+	line-height: 100px;
+	text-transform: capitalize;
+
+	width: 800px;
+	margin-bottom: 140px;
+	margin-top: 250px;
+
+	&::before {
+		height: 4px;
+		width: 950px;
+		background-color: #333333;
+
+		content: "";
+		display: block;
+		margin-bottom: 80px;
+	}
+
+	& span {
+		font-size: 100px;
+		font-weight: 300;
+		line-height: 80px;
+		text-transform: uppercase;
+	}
+
+}
+
+blockquote:not(#main-quote) {
+	font-family: "Raleway", sans-serif;
+	font-size: 32px;
 	font-weight: 600;
-	line-height: 64px;
-	margin: 126px 0px;
-	width: 927px;
+	line-height: 42px;
+	font-style: italic;
+
+	margin-top: 160px;
+	margin-bottom: 160px;
+	margin-left: auto;
+
+	width: 800px;
+
+	& p:first-child {
+
+		padding-right: 190px;
+		text-wrap: pretty
+	}
+
+
+	& p:nth-child(2) {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 34px;
+		font-style: italic;
+		margin-top: 30px;
+	}
+
+	&::before {
+		height: 4px;
+		width: auto;
+		background-color: #333333;
+
+		content: "";
+		display: block;
+		margin-bottom: 30px;
+	}
 
 	& span {
 		font-weight: 300;
 	}
 
-	&::before {
-		height: 9px;
-		width: 88px;
-		background-color: #333333;
+}
 
-		content: "";
-		display: block;
-		margin-bottom: 32px;
+
+
+q {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 38px;
+	font-style: italic;
+}
+
+.line-response {
+	width: 1066px;
+	height: 10px;
+	background-color: #333333;
+	margin-bottom: 80px;
+}
+
+
+
+.mythoughts-container {
+	background-color: #DBE7F3;
+	padding: 120px;
+
+	& h2 {
+		font-family: "Raleway", sans-serif;
+		font-size: 80px;
+		font-weight: 800;
+		line-height: 100px;
+		text-transform: lowercase;
+		margin-bottom: 160px;
+		width: 427px;
+
+		& span{
+			font-size: 100px;
+			font-weight: 300;
+			line-height: 80px;
+			text-transform: uppercase;
+		}
+
+	}
+
+	& h3 {
+		font-family: "Raleway", sans-serif;
+		font-size: 36px;
+		font-weight: 600;
+		line-height: 50px;
+		text-transform: uppercase;
+		width: 800px;
+		margin-bottom: 60px;
+		margin-top: 120px;
+
+		& span {
+			font-family: "Raleway", sans-serif;
+			font-size: 35px;
+			font-weight: 300;
+			line-height: 50px;
+			text-transform: uppercase;
+		}
+	}
+
+	& p {
+
+		width: 800px;
+		margin-left: auto;
+		margin-bottom: 40px;
+
+		text-wrap: pretty;
+
+		& span {
+
+			font-family: "Raleway", sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 38px;
+			font-style: italic;
+		}
+
 	}
 }
 
 
 
-#reference-link {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 38px;
-	font-style: italic;
-	text-decoration-line: underline;
 
-
-	border: 2px solid #333333;
-	background-color: white;
-
-	margin-top: 250px;
-	margin-bottom: 30px;
-	padding: 43px 56px;
-}
-
-q {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 38px;
-	font-style: italic;
-}
-
-time {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	line-height: 38px;
-	font-weight: 400;
-	font-style: italic;
-}
 
 strong {
 	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
-}
-
-
-a {
-	color: #A1A1A1;
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 32px;
-	font-style: italic;
-
 }
