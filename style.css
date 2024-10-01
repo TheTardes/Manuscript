@@ -13,41 +13,94 @@ html {
 }
 
 body {
+	padding-bottom: 120px;
+}
+
+.container{
 	width: 1170px;
 	margin-inline: auto;
-	margin-top: 80px;
-	margin-bottom: 120px;
 }
 
 * {
 	scroll-behavior: smooth;
 }
 
-#top-nav-container {
+#top-date-author-container {
 
+
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 40px;
+	font-style: italic;
+	margin-top: 60px;
+
+
+	& ul {
+		margin-top: 16px;
+	}
+}
+
+h1,
+h2,
+blockquote,
+q,
+a,
+h3,
+strong,
+time {
+	font-family: "Raleway", sans-serif;
+}
+
+a:not(.button) {
+	color: #A1A1A1;
+
+
+	&:hover {
+		color: #333333;
+		text-decoration: underline;
+
+	}
+}
+
+#navigation {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	gap: 6px;
+	width: 100vw;
+	background-color: white;
+	padding: 24px 100px;
+	position: sticky;
+	top: 0;
 
-	&>:first-child {
+	& a {
 
-		font-family: "Raleway", sans-serif;
-		font-size: 32px;
-		font-weight: 300;
-		line-height: 40px;
-		font-style: italic;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		text-transform: uppercase;
 
 	}
 
+	& ul {
+		display: flex;
+		justify-content: flex-start;
+		gap: 24px;
 
+	}
+
+	& section {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 
+
 .heading-1 {
-	font-family: "Raleway", sans-serif;
+
 	text-transform: capitalize;
 	color: #333333;
 
-	margin-top: 68px;
+	margin-top: 60px;
 
 	& span:nth-child(1) {
 		font-size: 116px;
@@ -72,12 +125,12 @@ body {
 
 
 #main-quote {
-	font-family: "Raleway", sans-serif;
+
 	font-size: 44px;
 	font-style: italic;
 	font-weight: 600;
 	line-height: 64px;
-	margin: 180px 0px;
+	margin: 160px 0px;
 	width: 842px;
 	margin-left: auto;
 
@@ -150,6 +203,19 @@ body {
 	display: flex;
 	gap: 22px;
 
+	& a {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 32px;
+		font-style: italic;
+
+
+		&:hover {
+			color: #333333;
+			text-decoration: underline;
+		}
+
+	}
 }
 
 
@@ -173,35 +239,15 @@ body {
 
 }
 
-a:not(.button) {
-	color: #A1A1A1;
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 32px;
-	font-style: italic;
 
-
-	&:hover {
-		color: #333333;
-		text-decoration: underline;
-
-	}
-
-}
-
-.font-32 {
-	font-family: "Raleway", sans-serif;
-	font-size: 24px;
-	line-height: 32px;
-	font-weight: 400;
-}
 
 .paragraph-container {
 	width: 876px;
 	text-align: left;
 
-	text-wrap: pretty;
+	white-space: collapse pretty;
+
+
 
 	& p {
 		margin-bottom: 60px;
@@ -218,7 +264,7 @@ a:not(.button) {
 	}
 
 	& time {
-		font-family: "Raleway", sans-serif;
+
 		font-size: 24px;
 		line-height: 32px;
 		font-weight: 300;
@@ -233,13 +279,23 @@ a:not(.button) {
 		line-height: 38px;
 		font-style: italic;
 	}
+
+	& a {
+
+
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		font-style: italic;
+
+
+	}
 }
 
 
 
 
 .heading-2 {
-	font-family: "Raleway", sans-serif;
 	font-size: 80px;
 	font-weight: 800;
 	line-height: 100px;
@@ -269,7 +325,7 @@ a:not(.button) {
 }
 
 blockquote:not(#main-quote) {
-	font-family: "Raleway", sans-serif;
+
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 42px;
@@ -284,13 +340,13 @@ blockquote:not(#main-quote) {
 	& p:first-child {
 
 		padding-right: 190px;
-		text-wrap: pretty
+		white-space: collapse pretty;
 	}
 
 
 	& p:nth-child(2) {
 		font-size: 24px;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 34px;
 		font-style: italic;
 		margin-top: 30px;
@@ -315,7 +371,7 @@ blockquote:not(#main-quote) {
 
 
 q {
-	font-family: "Raleway", sans-serif;
+
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 38px;
@@ -336,7 +392,7 @@ q {
 	padding: 120px;
 
 	& h2 {
-		font-family: "Raleway", sans-serif;
+
 		font-size: 80px;
 		font-weight: 800;
 		line-height: 100px;
@@ -344,7 +400,7 @@ q {
 		margin-bottom: 160px;
 		width: 427px;
 
-		& span{
+		& span {
 			font-size: 100px;
 			font-weight: 300;
 			line-height: 80px;
@@ -354,17 +410,17 @@ q {
 	}
 
 	& h3 {
-		font-family: "Raleway", sans-serif;
+
 		font-size: 36px;
-		font-weight: 600;
+		font-weight: 800;
 		line-height: 50px;
-		text-transform: uppercase;
 		width: 800px;
 		margin-bottom: 60px;
 		margin-top: 120px;
 
+
 		& span {
-			font-family: "Raleway", sans-serif;
+
 			font-size: 35px;
 			font-weight: 300;
 			line-height: 50px;
@@ -378,7 +434,7 @@ q {
 		margin-left: auto;
 		margin-bottom: 40px;
 
-		text-wrap: pretty;
+		white-space: collapse pretty;
 
 		& span {
 
@@ -397,7 +453,6 @@ q {
 
 
 strong {
-	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
