@@ -16,13 +16,14 @@ body {
 	padding-bottom: 120px;
 }
 
-.container{
+.container {
 	width: 1170px;
 	margin-inline: auto;
 }
 
 * {
 	scroll-behavior: smooth;
+	scroll-padding-top: 150px;
 }
 
 #top-date-author-container {
@@ -47,10 +48,18 @@ q,
 a,
 h3,
 strong,
+h4
 time {
 	font-family: "Raleway", sans-serif;
 }
 
+h4 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 34px;
+	margin-bottom: 3px;
+	
+}
 a:not(.button) {
 	color: #A1A1A1;
 
@@ -63,8 +72,9 @@ a:not(.button) {
 }
 
 #navigation {
-	display: grid;
-	gap: 6px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100vw;
 	background-color: white;
 	padding: 24px 100px;
@@ -82,14 +92,14 @@ a:not(.button) {
 
 	& ul {
 		display: flex;
-		justify-content: flex-start;
 		gap: 24px;
 
 	}
 
 	& section {
 		display: flex;
-		justify-content: space-between;
+		gap: 24px;
+
 	}
 }
 
@@ -240,9 +250,41 @@ a:not(.button) {
 }
 
 
+.has-links {
+	display: flex;
+	gap: 32px;
+	width: 100% !important;
+
+
+	&>:first-child {
+		min-width: 850px;
+		width: 850px;
+	}
+
+	& aside p {
+		font-size: 18px;
+		line-height: 24px;
+
+		margin-bottom: 24px;
+	}
+
+
+	&:has(.trigger-1:hover) aside>:nth-child(1),
+	&:has(.trigger-2:hover) aside>:nth-child(2), 
+	&:has(.trigger-3:hover) aside>:nth-child(3) {
+		color: #454545;
+	}
+
+	& aside section{
+		color: #A1A1A1;
+
+	}
+
+}
+
 
 .paragraph-container {
-	width: 876px;
+	width: 850px;
 	text-align: left;
 
 	white-space: collapse pretty;
@@ -284,12 +326,13 @@ a:not(.button) {
 
 
 		font-size: 24px;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 32px;
 		font-style: italic;
 
 
 	}
+
 }
 
 
