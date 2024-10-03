@@ -9,7 +9,6 @@ html {
 
 	color: #454545;
 	background-color: #F3F3F3;
-
 }
 
 body {
@@ -26,20 +25,6 @@ body {
 	scroll-padding-top: 150px;
 }
 
-#top-date-author-container {
-
-
-	font-size: 32px;
-	font-weight: 300;
-	line-height: 40px;
-	font-style: italic;
-	margin-top: 60px;
-
-
-	& ul {
-		margin-top: 16px;
-	}
-}
 
 h1,
 h2,
@@ -48,26 +33,23 @@ q,
 a,
 h3,
 strong,
-h4
-time {
+h4, time {
 	font-family: "Raleway", sans-serif;
 }
 
 h4 {
 	font-size: 24px;
 	font-weight: 600;
-	line-height: 34px;
+	line-height: 32px;
 	margin-bottom: 3px;
-	
 }
+
 a:not(.button) {
 	color: #A1A1A1;
-
 
 	&:hover {
 		color: #333333;
 		text-decoration: underline;
-
 	}
 }
 
@@ -82,31 +64,36 @@ a:not(.button) {
 	top: 0;
 
 	& a {
-
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 20px;
 		text-transform: uppercase;
-
 	}
 
 	& ul {
 		display: flex;
 		gap: 24px;
-
 	}
 
 	& section {
 		display: flex;
 		gap: 24px;
-
 	}
 }
 
+#top-date-author-container {
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 40px;
+	font-style: italic;
+	margin-top: 60px;
 
+	& ul {
+		margin-top: 16px;
+	}
+}
 
 .heading-1 {
-
 	text-transform: capitalize;
 	color: #333333;
 
@@ -126,7 +113,7 @@ a:not(.button) {
 	}
 
 	& span:nth-child(3) {
-		font-size: 164px;
+		font-size: 116px;
 		font-weight: 800;
 		line-height: 136px;
 	}
@@ -135,7 +122,6 @@ a:not(.button) {
 
 
 #main-quote {
-
 	font-size: 44px;
 	font-style: italic;
 	font-weight: 600;
@@ -143,7 +129,6 @@ a:not(.button) {
 	margin: 160px 0px;
 	width: 842px;
 	margin-left: auto;
-
 
 	& span {
 		font-weight: 300;
@@ -158,17 +143,16 @@ a:not(.button) {
 		display: block;
 		margin-bottom: 32px;
 	}
-
 }
 
 .article-summary {
-
 	border-top: 1px #A1A1A1 solid;
 	border-bottom: 1px #A1A1A1 solid;
 
 	padding-top: 58px;
 	padding-bottom: 58px;
-	margin: 190px 0px;
+	margin-top: 100px;
+	margin-bottom: 300px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 64px;
@@ -182,9 +166,7 @@ a:not(.button) {
 
 		&>section {
 
-
 			&>p:first-child {
-
 				font-size: 24px;
 				font-weight: 600;
 				line-height: 38px;
@@ -197,7 +179,6 @@ a:not(.button) {
 	}
 
 	&>:nth-child(2) {
-
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -209,7 +190,6 @@ a:not(.button) {
 
 
 .author-list {
-
 	display: flex;
 	gap: 22px;
 
@@ -218,7 +198,6 @@ a:not(.button) {
 		font-weight: 500;
 		line-height: 32px;
 		font-style: italic;
-
 
 		&:hover {
 			color: #333333;
@@ -242,7 +221,6 @@ a:not(.button) {
 	margin-right: auto;
 	padding: 12px 24px;
 
-
 	&:hover {
 		color: #333333;
 	}
@@ -255,29 +233,27 @@ a:not(.button) {
 	gap: 32px;
 	width: 100% !important;
 
-
 	&>:first-child {
 		min-width: 850px;
 		width: 850px;
 	}
 
 	& aside p {
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 20px;
+		color: #A1A1A1;
 
 		margin-bottom: 24px;
 	}
 
 
 	&:has(.trigger-1:hover) aside>:nth-child(1),
-	&:has(.trigger-2:hover) aside>:nth-child(2), 
-	&:has(.trigger-3:hover) aside>:nth-child(3) {
-		color: #454545;
+	&:has(.trigger-2:hover) aside>:nth-child(2) {
+		display: block;
 	}
 
-	& aside section{
-		color: #A1A1A1;
-
+	& aside section {
+		display: none;
 	}
 
 }
@@ -288,8 +264,6 @@ a:not(.button) {
 	text-align: left;
 
 	white-space: collapse pretty;
-
-
 
 	& p {
 		margin-bottom: 60px;
@@ -306,7 +280,6 @@ a:not(.button) {
 	}
 
 	& time {
-
 		font-size: 24px;
 		line-height: 32px;
 		font-weight: 300;
@@ -314,22 +287,20 @@ a:not(.button) {
 	}
 
 	& span {
-
 		font-family: "Raleway", sans-serif;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 38px;
 		font-style: italic;
+		white-space: nowrap;
 	}
 
 	& a {
-
-
 		font-size: 24px;
 		font-weight: 600;
 		line-height: 32px;
 		font-style: italic;
-
+		white-space: nowrap;
 
 	}
 
@@ -381,11 +352,9 @@ blockquote:not(#main-quote) {
 	width: 800px;
 
 	& p:first-child {
-
 		padding-right: 190px;
 		white-space: collapse pretty;
 	}
-
 
 	& p:nth-child(2) {
 		font-size: 24px;
@@ -414,7 +383,6 @@ blockquote:not(#main-quote) {
 
 
 q {
-
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 38px;
@@ -433,9 +401,9 @@ q {
 .mythoughts-container {
 	background-color: #DBE7F3;
 	padding: 120px;
+	margin-bottom: 200px;
 
 	& h2 {
-
 		font-size: 80px;
 		font-weight: 800;
 		line-height: 100px;
@@ -449,11 +417,9 @@ q {
 			line-height: 80px;
 			text-transform: uppercase;
 		}
-
 	}
 
 	& h3 {
-
 		font-size: 36px;
 		font-weight: 800;
 		line-height: 50px;
@@ -461,9 +427,7 @@ q {
 		margin-bottom: 60px;
 		margin-top: 120px;
 
-
 		& span {
-
 			font-size: 35px;
 			font-weight: 300;
 			line-height: 50px;
@@ -472,7 +436,6 @@ q {
 	}
 
 	& p {
-
 		width: 800px;
 		margin-left: auto;
 		margin-bottom: 40px;
@@ -480,19 +443,14 @@ q {
 		white-space: collapse pretty;
 
 		& span {
-
 			font-family: "Raleway", sans-serif;
 			font-size: 24px;
 			font-weight: 700;
 			line-height: 38px;
 			font-style: italic;
 		}
-
 	}
 }
-
-
-
 
 
 strong {
