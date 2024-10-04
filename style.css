@@ -11,10 +11,6 @@ html {
 	background-color: #F3F3F3;
 }
 
-body {
-	padding-bottom: 120px;
-}
-
 .container {
 	width: 1170px;
 	margin-inline: auto;
@@ -33,7 +29,8 @@ q,
 a,
 h3,
 strong,
-h4, time {
+h4,
+time {
 	font-family: "Raleway", sans-serif;
 }
 
@@ -44,7 +41,7 @@ h4 {
 	margin-bottom: 3px;
 }
 
-a:not(.button) {
+a:not(.button, .blue-button) {
 	color: #A1A1A1;
 
 	&:hover {
@@ -57,9 +54,9 @@ a:not(.button) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	background-color: white;
-	padding: 24px 100px;
+	padding: 16px 100px;
 	position: sticky;
 	top: 0;
 
@@ -74,11 +71,14 @@ a:not(.button) {
 		display: flex;
 		gap: 24px;
 	}
+}
 
-	& section {
-		display: flex;
-		gap: 24px;
-	}
+.blue-button {
+	color: #2887e5;
+
+	&:hover {
+		color: #333333;
+}
 }
 
 #top-date-author-container {
@@ -94,28 +94,25 @@ a:not(.button) {
 }
 
 .heading-1 {
-	text-transform: capitalize;
 	color: #333333;
+	font-size: 116px;
+	line-height: 136px;
 
 	margin-top: 60px;
 
 	& span:nth-child(1) {
-		font-size: 116px;
 		font-weight: 800;
-		line-height: 136px;
 	}
 
 	& span:nth-child(2) {
-		font-size: 116px;
 		font-weight: 300;
-		line-height: 136px;
 		text-transform: uppercase;
 	}
 
 	& span:nth-child(3) {
-		font-size: 116px;
+		font-size: 174px;
 		font-weight: 800;
-		line-height: 136px;
+		text-transform: capitalize;
 	}
 
 }
@@ -246,7 +243,6 @@ a:not(.button) {
 		margin-bottom: 24px;
 	}
 
-
 	&:has(.trigger-1:hover) aside>:nth-child(1),
 	&:has(.trigger-2:hover) aside>:nth-child(2) {
 		display: block;
@@ -301,19 +297,14 @@ a:not(.button) {
 		line-height: 32px;
 		font-style: italic;
 		white-space: nowrap;
-
 	}
-
 }
-
-
 
 
 .heading-2 {
 	font-size: 80px;
 	font-weight: 800;
 	line-height: 100px;
-	text-transform: capitalize;
 
 	width: 800px;
 	margin-bottom: 140px;
@@ -377,10 +368,7 @@ blockquote:not(#main-quote) {
 	& span {
 		font-weight: 300;
 	}
-
 }
-
-
 
 q {
 	font-size: 24px;
@@ -395,7 +383,6 @@ q {
 	background-color: #333333;
 	margin-bottom: 80px;
 }
-
 
 
 .mythoughts-container {
